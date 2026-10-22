@@ -55,4 +55,4 @@ http.createServer(async (req, res) => {
     if (!f.startsWith(path.join(__dirname, "public")) || !fs.existsSync(f)) { res.writeHead(404); return res.end("Not found"); }
     res.writeHead(200, { "Content-Type": f.endsWith(".html") ? "text/html" : "text/plain" }); fs.createReadStream(f).pipe(res);
   } catch (e) { send(res, 500, { error: "Server error" }); }
-}).listen(PORT, () => console.log("JoJoScore on http://localhost:" + PORT + (KEY ? "" : "  (set API_KEY!)")));
+}).listen(PORT, () => console.log("JoJoScore on http://localhost:" + PORT + (KEY ? "" : "  (794015509a9fe7bc4b67dde9d4560437)")));
